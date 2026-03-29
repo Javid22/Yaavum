@@ -24,7 +24,7 @@ export default function About() {
       <div
         className="absolute inset-0 opacity-[0.04]"
         style={{
-          backgroundImage: `url("https://images.unsplash.com/photo-1526318896980-cf78c088247c?w=1920&q=60&auto=format")`,
+          backgroundImage: `url('/images/Atho.webp'), url('/images/Atho.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -41,8 +41,8 @@ export default function About() {
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               {/* Real food image */}
               <Image
-                src="/images/Atho.png"
-                alt="Authentic Burmese Atho noodles from Yaavum Atho Kadai"
+                src="/images/Egg_Bejo.jpg"
+                alt="Authentic Burmese Egg Masala from Yaavum Atho Kadai"
                 fill
                 className="object-cover transition-transform duration-[8000ms] ease-out hover:scale-110"
                 sizes="(max-width: 1024px) 100vw, 50vw"

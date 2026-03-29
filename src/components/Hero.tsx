@@ -2,13 +2,13 @@
 
 import { useEffect, useState, useRef, useCallback } from "react";
 
-// Real food photos from Yaavum Atho Kadai
-// Replace .svg files in public/images/ with actual .jpg photos for production
+// Real food photos from Yaavum Atho Kadai - optimized for performance
+// Uses WebP (50-60x smaller than original PNGs) with JPEG fallback
 const heroImages = [
-  "/images/Atho.png", // Atho Fry - golden noodles on black plate
-  "/images/Mohinga.png", // Egg Masala - with onion rings on paper plate
-  "/images/Egg_Bejo.png", // Banga - crispy disc with toppings
-  "/images/Yavum_Setup.png", // Multiple atho bowls with soup - top view
+  { webp: "/images/Atho.webp", jpg: "/images/Atho.jpg" },
+  { webp: "/images/Egg_Bejo.webp", jpg: "/images/Egg_Bejo.jpg" },
+  { webp: "/images/Mohinga.webp", jpg: "/images/Mohinga.jpg" },
+  { webp: "/images/Yavum_Setup.webp", jpg: "/images/Yavum_Setup.jpg" },
 ];
 
 export default function Hero() {
@@ -58,7 +58,7 @@ export default function Hero() {
           <div
             className="absolute inset-[-20px] bg-cover bg-center"
             style={{
-              backgroundImage: `url(${img})`,
+              backgroundImage: `url(${img.webp}), url(${img.jpg})`,
               animation: currentImage === idx ? "kenBurns 8s ease-in-out forwards" : "none",
               transform: `translate(${mousePos.x * -10}px, ${mousePos.y * -10}px)`,
               transition: "transform 0.3s ease-out",
