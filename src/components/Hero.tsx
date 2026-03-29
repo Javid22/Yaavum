@@ -122,33 +122,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-        {/* Glassmorphism Rating Badge */}
-        <div
-          className={`inline-flex items-center gap-2 backdrop-blur-md bg-white/5 border border-white/10 rounded-full px-5 py-2.5 mb-8 shadow-lg shadow-gold/5 transition-all duration-1000 ${
-            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-          }`}
-        >
-          <span className="text-gold text-sm font-medium">&#9733; 4.6 Rated</span>
-          <span className="w-1 h-1 bg-gold/50 rounded-full" />
-          <span className="text-white-soft/70 text-sm">1000+ Reviews</span>
-        </div>
-
-        {/* Tamil Script - with reveal animation */}
-        <div
-          className={`overflow-hidden transition-all duration-1000 delay-200 ${
-            visible ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <span
-            className={`inline-block text-gold/50 text-lg md:text-2xl tracking-[0.4em] font-light transition-transform duration-1000 delay-200 ${
-              visible ? "translate-y-0" : "translate-y-full"
-            }`}
-          >
-            யாவும்
-          </span>
-        </div>
-
+      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto top-10">
         {/* Main Title - Split text reveal */}
         <h1 className="font-[family-name:var(--font-poppins)] mt-3 mb-5">
           <span className="block overflow-hidden">
