@@ -1,0 +1,12 @@
+# Open/create .gitignore in your project root
+notepad .gitignore
+```
+Add these lines to ignore common large folders:
+```
+node_modules/
+.next/
+out/
+build/
+*.mp4
+*.mp3
+*.zip
