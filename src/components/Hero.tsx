@@ -210,10 +210,10 @@ export default function Hero() {
             <button
               key={idx}
               onClick={() => setCurrentImage(idx)}
-              className={`h-[3px] rounded-full transition-all duration-500 ${
+              className={`h-[0.5px] rounded-full transition-all duration-500 ${
                 currentImage === idx
-                  ? "w-8 bg-gold"
-                  : "w-3 bg-white-soft/20 hover:bg-white-soft/40"
+                  ? "w-2 bg-gold"
+                  : "w-0.5 bg-white-soft/20 hover:bg-white-soft/40"
               }`}
               aria-label={`Image ${idx + 1}`}
             />
